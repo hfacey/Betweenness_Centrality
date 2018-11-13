@@ -17,4 +17,4 @@ Then, you can just run "make". That generates 2 benchmark programs: benchmark-di
 If you don't have access to such a system, you can modify the benchmark-bfs.cc and benchmark-dijkstra.cc to run with the number of cores you have available.
 
 This program was tested with graphs of road networks and flight/airport data. Some sample graphs are provided (named in the format <num_vertices>.txt). A good place to get data for road networks is http://tm.teresco.org/graphs/ (use the “simple” version of the graphs) which gives you a tmg file. You can feed the tmg file into the script tmgtograph.py to get a graph file in the correct format.
-Run: python3 tmgtograph.py <tmg file> <output file>
+Run: python3 tmgtograph.py <tmg file>.tmg <output file>.txt
