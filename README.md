@@ -7,7 +7,9 @@ This project evaluates the speedups possible with OpenMP by calculating the betw
 Currently, the application is really set up to work with the Bridges supercomputer (or any system with 28 nodes to do the benchmark). Assuming you've loaded the file to Bridges (or equivalent system), you would run the following commands:
 
 interact –ntasks-per-node=28
+
 export OMP_NUM_THREADS=28
+
 module load gcc/7.3.0
 
 Then, you can just run "make". That generates 2 benchmark programs: benchmark-dijkstra and benchmark_bfs. They each take the output file as a command line paramenter. The programs will run with the graphs already provided.
